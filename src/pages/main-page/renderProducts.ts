@@ -2,16 +2,15 @@ import { trackingProducts } from '../../features/features';
 import { IProduct } from '../../types/types';
 
 function renderProducts(products: IProduct[]) {
-  const mainContent: HTMLDivElement | null = document.querySelector('.main');
-  if (mainContent !== null) {
-    mainContent.innerHTML = `
-  <section class="main__filters filters"></section>
-  <section class="main__products">
-    <div class="products__top-panel"></div>
-    <div class="products">
-    ТОваров не нашлось</div>
-  </section>`;
-  }
+  // const mainContent: HTMLDivElement | null = document.querySelector('.main');
+  // if (mainContent !== null) {
+  //   mainContent.innerHTML = `
+  // <section class="main__filters filters"></section>
+  // <section class="main__products">
+  //   <div class="products__top-panel"></div>
+  //   <div class="products"></div>
+  // </section>`;
+  // }
   const productsField: HTMLDivElement | null = document.querySelector('.products');
   const productsTopPanel: HTMLDivElement | null = document.querySelector('.products__top-panel');
   if (productsTopPanel !== null) {

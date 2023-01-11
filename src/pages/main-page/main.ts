@@ -3,6 +3,15 @@ import { mainFilters } from './mainFilters';
 import { renderProducts } from './renderProducts';
 
 const mainPage = (products: IProduct[]): void => {
+  const mainContent: HTMLDivElement | null = document.querySelector('.main');
+  if (mainContent !== null) {
+    mainContent.innerHTML = `
+  <section class="main__filters filters"></section>
+  <section class="main__products">
+    <div class="products__top-panel"></div>
+    <div class="products"></div>
+  </section>`;
+  }
   renderProducts(products);
 
   const showTopButtons = (): HTMLDivElement => {
