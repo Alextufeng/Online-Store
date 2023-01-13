@@ -1,0 +1,215 @@
+.main {
+  &__cart {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+}
+
+.ordered {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-grey-s-tr;
+  border-radius: 20px;
+  width: 65%;
+
+  &__header {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6px;
+    align-items: baseline;
+    justify-content: space-around;
+    color: $color-yellow;
+    border-bottom: 2px solid $color-yellow;
+    padding: 10px;
+
+    #numberOfItems {
+      color: $color-white;
+      background-color: transparent;
+      text-align: center;
+      width: 40px;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+  }
+
+  &__product {
+    width: 96%;
+    color: $color-grey-s;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: space-between;
+    margin: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color-yellow;
+  }
+
+  &__number {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__item {
+    flex-grow: 1;
+  }
+
+  &__manage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__stock {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  &__how-many {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    &_drop,
+    &_add {
+      border: 1px solid $color-grey-s-tr;
+      border-radius: 50%;
+      padding: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 4px;
+    cursor: pointer;
+    &__img {
+      border: 1px solid $color-yellow;
+      border-radius: 6px;
+      max-width: 60px;
+      max-height: 60px;
+    }
+
+    &__info {
+      margin: 0 auto;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      color: $color-white;
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid $color-grey-s;
+    }
+
+    &__description {
+      text-align: center;
+    }
+
+    &__additionally {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 100%;
+      color: $color-brown-xl;
+    }
+  }
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-grey-s-tr;
+  border-radius: 20px;
+  color: $color-white;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $color-yellow;
+  width: 26%;
+  height: fit-content;
+
+  &__header {
+    justify-content: space-around;
+    color: $color-yellow;
+    border-bottom: 2px solid $color-yellow;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__promo {
+    text-align: center;
+  }
+  & p {
+    font-size: 0.8rem;
+    color: $color-white-tr;
+  }
+
+  .promo-description button {
+    margin-left: 5px;
+    padding: 3px;
+    border: solid 1px $color-yellow;
+    border-radius: 5px;
+    &:hover {
+      color: $color-white;
+      background: $color-brown-s;
+    }
+  }
+
+  .through {
+    color: $color-white;
+    text-decoration: line-through;
+  }
+
+  #promo {
+    width: 80%;
+    color: $color-white-tr;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border: 1px solid $color-yellow;
+    background: $color-brown-xl;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+  }
+
+  .buy-now {
+    color: $color-white-tr;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border: 1px solid $color-yellow;
+    background: $color-brown-xl;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    &:hover {
+      color: $color-white;
+      background: $color-brown-m;
+    }
+    &:active {
+      background: $color-brown-s;
+    }
+  }
+
+  .add-promo {
+    padding: 4px 8px;
+    color: $color-white;
+    background-color: $color-grey-s-tr;
+    border: 1px solid $color-white;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $color-brown-s;
+    }
+    &:active {
+      background: $color-brown-m;
+    }
+  }
+}

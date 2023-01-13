@@ -1,0 +1,24 @@
+$color-brown-xl: #383838;
+$color-brown-l: #62573c;
+$color-brown-m: #7b6a3f;
+$color-brown-s: #a59568;
+$color-yellow: #eec353;
+$color-grey-m: #c4c4c4;
+$color-grey-m-tr: rgba(196, 196, 196, 0.1);
+$color-grey-s-tr: rgba(196, 196, 196, 0.25);
+$color-grey-s: #d7d7d7;
+$color-white: #ffffff;
+$color-white-tr: rgba(255, 255, 255, 0.47);
+
+@font-face {
+  font-family: 'Montiran';
+  src: url('../assets/fonts/Molgan-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Molgan';
+  src: url('../assets/fonts/Molgan-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

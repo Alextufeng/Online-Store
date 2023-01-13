@@ -1,0 +1,79 @@
+.header {
+  padding: 20px;
+  background-color: $color-grey-m-tr;
+  background-image: url('../assets/images/noise_transparent.png');
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: $color-white;
+  &__nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.nav {
+  &__logo {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  &__link {
+    font-family: Molgan;
+    color: $color-yellow;
+    transition: all 0.4s;
+    &:hover {
+      color: $color-white-tr;
+    }
+    &:active {
+      color: $color-grey-s-tr;
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+}
+.order {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: space-around;
+  &__cart {
+    position: relative;
+  }
+  &__link > svg {
+    color: $color-yellow;
+    width: 60px;
+    height: 60px;
+    outline: 1px solid transparent;
+    outline-offset: 4px;
+    border-radius: 10%;
+    transition-property: color, outline-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      color: $color-white-tr;
+    }
+    &:focus {
+      outline-color: $color-white-tr;
+    }
+    &:active {
+      color: $color-grey-s-tr;
+    }
+  }
+  &__amount {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 50%;
+    color: $color-white;
+    background-color: $color-brown-m;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
